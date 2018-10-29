@@ -1,0 +1,28 @@
+%% NOTE: https://tex.stackexchange.com/a/200040
+%% NOTE: http://makingcomics.spiltink.org/pgtemplates/
+\documentclass[]{article}
+\usepackage[
+  papersize={6.625in,10.25in},
+  margin=.25in
+]{geometry}
+\usepackage[
+  width=6.875truein, height=10.5truein,
+  cam, center, noinfo, pdftex
+]{crop}
+\usepackage{flowfram}
+\pagestyle{empty}
+\newflowframe{.475\textwidth}{.3\textheight}{0pt}{.7\textheight}[1]
+\newflowframe{.475\textwidth}{.3\textheight}{.525\textwidth}{.7\textheight}[2]
+\newflowframe{.475\textwidth}{.3\textheight}{0pt}{.35\textheight}[3]
+\newflowframe{.475\textwidth}{.3\textheight}{.525\textwidth}{.35\textheight}[4]
+\newflowframe{.475\textwidth}{.3\textheight}{0pt}{0pt}[5]
+\newflowframe{.475\textwidth}{.3\textheight}{.525\textwidth}{0pt}[6]
+\setallflowframes{border=plain}
+\begin{document}
+1\newpage
+2\newpage
+3\newpage
+4\newpage
+5\newpage
+6\newpage
+\end{document}
